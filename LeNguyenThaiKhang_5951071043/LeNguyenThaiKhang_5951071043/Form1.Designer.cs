@@ -205,7 +205,7 @@ namespace LeNguyenThaiKhang_5951071043
             "https://www.bing.com/"});
             this.adrBarTextBox.Name = "adrBarTextBox";
             this.adrBarTextBox.Size = new System.Drawing.Size(600, 32);
-            this.adrBarTextBox.Text = "https://www.bing.com/";
+            this.adrBarTextBox.Text = "https://www.google.com/webhp";
             this.adrBarTextBox.DropDown += new System.EventHandler(this.adrBarTextBox_DropDown_1);
             this.adrBarTextBox.SelectedIndexChanged += new System.EventHandler(this.adrBarTextBox_SelectedIndexChanged);
             this.adrBarTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.adrBarTextBox_KeyDown);
@@ -355,14 +355,14 @@ namespace LeNguyenThaiKhang_5951071043
             // googleSearch
             // 
             this.googleSearch.Name = "googleSearch";
-            this.googleSearch.Size = new System.Drawing.Size(224, 26);
+            this.googleSearch.Size = new System.Drawing.Size(141, 26);
             this.googleSearch.Text = "Google";
             this.googleSearch.Click += new System.EventHandler(this.googleSearch_Click);
             // 
             // liveSearch
             // 
             this.liveSearch.Name = "liveSearch";
-            this.liveSearch.Size = new System.Drawing.Size(224, 26);
+            this.liveSearch.Size = new System.Drawing.Size(141, 26);
             this.liveSearch.Text = "Live";
             this.liveSearch.Click += new System.EventHandler(this.liveSearch_Click);
             // 
@@ -408,7 +408,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripSeparator3,
             this.propertiesToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(162, 28);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newTabToolStripMenuItem
@@ -504,7 +504,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(162, 28);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // cutToolStripMenuItem
@@ -552,7 +552,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.organizeFavoritesToolStripMenuItem,
             this.linksToolStripMenuItem});
             this.favoritesToolStripMenuItem.Name = "favoritesToolStripMenuItem";
-            this.favoritesToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.favoritesToolStripMenuItem.Size = new System.Drawing.Size(162, 28);
             this.favoritesToolStripMenuItem.Text = "Favorites";
             this.favoritesToolStripMenuItem.DropDownOpening += new System.EventHandler(this.favoritesToolStripMenuItem_DropDownOpening_1);
             // 
@@ -598,7 +598,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.fullScreenToolStripMenuItem,
             this.splashToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(162, 28);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // toolbarsToolStripMenuItem
@@ -772,7 +772,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.mailsToolStripMenuItem,
             this.sourceToolStripMenuItem1});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(162, 28);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // deleteBrowserHistoryToolStripMenuItem
@@ -821,7 +821,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.helpToolStripMenuItem1,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(162, 28);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // helpToolStripMenuItem1
@@ -905,7 +905,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.linkBar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.linkBar.Location = new System.Drawing.Point(0, 32);
             this.linkBar.Name = "linkBar";
-            this.linkBar.Size = new System.Drawing.Size(1609, 27);
+            this.linkBar.Size = new System.Drawing.Size(1609, 31);
             this.linkBar.TabIndex = 5;
             this.linkBar.Text = "toolStrip2";
             this.linkBar.VisibleChanged += new System.EventHandler(this.linkBar_VisibleChanged);
@@ -971,14 +971,14 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton7.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton7.Text = "ADD LINK";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton9
             // 
@@ -986,14 +986,14 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton9.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton9.Text = "GOOGLE";
             this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click_1);
             // 
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton13
             // 
@@ -1001,14 +1001,14 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripButton13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton13.Image")));
             this.toolStripButton13.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton13.Name = "toolStripButton13";
-            this.toolStripButton13.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton13.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton13.Text = "GMAIL";
             this.toolStripButton13.Click += new System.EventHandler(this.toolStripButton13_Click);
             // 
             // toolStripSeparator20
             // 
             this.toolStripSeparator20.Name = "toolStripSeparator20";
-            this.toolStripSeparator20.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator20.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton14
             // 
@@ -1016,14 +1016,14 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripButton14.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton14.Image")));
             this.toolStripButton14.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton14.Name = "toolStripButton14";
-            this.toolStripButton14.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton14.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton14.Text = "INSTAGRAM";
             this.toolStripButton14.Click += new System.EventHandler(this.toolStripButton14_Click);
             // 
             // toolStripSeparator19
             // 
             this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator19.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton15
             // 
@@ -1031,23 +1031,23 @@ namespace LeNguyenThaiKhang_5951071043
             this.toolStripButton15.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton15.Image")));
             this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton15.Name = "toolStripButton15";
-            this.toolStripButton15.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton15.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton15.Text = "FACEBOOK";
             this.toolStripButton15.Click += new System.EventHandler(this.toolStripButton15_Click);
             // 
             // toolStripSeparator18
             // 
             this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator18.Size = new System.Drawing.Size(6, 31);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.tabControl2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(0, 59);
+            this.panel1.Location = new System.Drawing.Point(0, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 674);
+            this.panel1.Size = new System.Drawing.Size(347, 670);
             this.panel1.TabIndex = 5;
             this.panel1.Visible = false;
             this.panel1.VisibleChanged += new System.EventHandler(this.panel1_VisibleChanged);
@@ -1061,7 +1061,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(347, 674);
+            this.tabControl2.Size = new System.Drawing.Size(347, 670);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage2
@@ -1070,7 +1070,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(339, 642);
+            this.tabPage2.Size = new System.Drawing.Size(339, 638);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Favorites";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1083,7 +1083,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.favTreeView.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.favTreeView.Location = new System.Drawing.Point(3, 3);
             this.favTreeView.Name = "favTreeView";
-            this.favTreeView.Size = new System.Drawing.Size(333, 636);
+            this.favTreeView.Size = new System.Drawing.Size(333, 632);
             this.favTreeView.TabIndex = 0;
             this.favTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.favTreeView_AfterSelect);
             this.favTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.favTreeView_NodeMouseClick);
@@ -1231,9 +1231,9 @@ namespace LeNguyenThaiKhang_5951071043
             this.panel2.BackColor = System.Drawing.Color.Lavender;
             this.panel2.Controls.Add(this.tabControl1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(347, 59);
+            this.panel2.Location = new System.Drawing.Point(347, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1262, 674);
+            this.panel2.Size = new System.Drawing.Size(1262, 670);
             this.panel2.TabIndex = 6;
             // 
             // tabControl1
@@ -1246,7 +1246,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1262, 674);
+            this.tabControl1.Size = new System.Drawing.Size(1262, 670);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 1;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
@@ -1267,7 +1267,6 @@ namespace LeNguyenThaiKhang_5951071043
             this.closeTabToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
             this.closeTabToolStripMenuItem1.Size = new System.Drawing.Size(226, 24);
             this.closeTabToolStripMenuItem1.Text = "CloseTab";
-            this.closeTabToolStripMenuItem1.Click += new System.EventHandler(this.closeTabToolStripMenuItem1_Click);
             // 
             // duplicateTabToolStripMenuItem1
             // 
@@ -1283,9 +1282,9 @@ namespace LeNguyenThaiKhang_5951071043
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1254, 641);
+            this.tabPage4.Size = new System.Drawing.Size(1254, 637);
             this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = " Bing";
+            this.tabPage4.Text = "Google";
             // 
             // webBrowser1
             // 
@@ -1294,7 +1293,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.webBrowser1.Location = new System.Drawing.Point(3, 3);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1248, 635);
+            this.webBrowser1.Size = new System.Drawing.Size(1248, 631);
             this.webBrowser1.TabIndex = 0;
             // 
             // tabPage1
@@ -1434,7 +1433,7 @@ namespace LeNguyenThaiKhang_5951071043
             this.Controls.Add(this.menuBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TKBrowser";
-            this.Text = "Form1";
+            this.Text = "TKBrowser";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TKBrowser_Load);
             this.menuBar.ResumeLayout(false);

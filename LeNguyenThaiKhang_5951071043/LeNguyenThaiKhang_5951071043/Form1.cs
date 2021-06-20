@@ -42,7 +42,7 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void TKBrowser_Load(object sender, EventArgs e)
         {
-            getCurrentBrowser().Navigate("https://www.bing.com/");
+            getCurrentBrowser().Navigate("https://www.google.com/webhp");
             this.toolStripStatusLabel1.Text = "Done";
             comboBox1.SelectedItem = comboBox1.Items[0];
             setVisibility();
@@ -300,7 +300,7 @@ namespace LeNguyenThaiKhang_5951071043
 
                 if (panel1.Visible == true)
                 {
-                    /*ordered visited today*/
+                
                     if (comboBox1.Text.Equals("Ordered Visited Today"))
                     {
                         if (!historyTreeView.Nodes.ContainsKey(url.ToString()))
@@ -316,7 +316,7 @@ namespace LeNguyenThaiKhang_5951071043
                             historyTreeView.Nodes[url.ToString()].ToolTipText
                               = url.ToString() + "\nLast Visited: " + data + "\nTimes visited: " + i.ToString();
                     }
-                    /*view by site*/
+                
                     if (comboBox1.Text.Equals("View By Site"))
                     {
                         if (!historyTreeView.Nodes.ContainsKey(url.Host.ToString()))
@@ -446,10 +446,12 @@ namespace LeNguyenThaiKhang_5951071043
  // đóng tab       
         private void closeTab()
         {
-          
-                
-                tabControl1.TabPages.Remove(tabControl1.SelectedTab);
-            
+
+            if (tabControl1.TabCount != 2)
+            {
+                tabControl1.TabPages.RemoveAt(tabControl1.SelectedIndex);
+            }
+
 
         }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -549,10 +551,10 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void showUrl()
         {
-            if (File.Exists(favXml))
+            if (File.Exists(historyXml))
             {
                 XmlDocument myXml = new XmlDocument();
-                myXml.Load(favXml);
+                myXml.Load(historyXml);
                 //int i = 0;
                 int num = int.Parse(settings.DocumentElement.ChildNodes[6].InnerText.ToString());
                 foreach (XmlElement el in myXml.DocumentElement.ChildNodes)
@@ -1053,10 +1055,7 @@ namespace LeNguyenThaiKhang_5951071043
                 getCurrentBrowser().Navigate(e.Node.ToolTipText);
         }
 
-        private void closeTabToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            closeTab();
-        }
+        
 
         private void closeTabContext_Click(object sender, EventArgs e)
         {
@@ -1174,11 +1173,11 @@ namespace LeNguyenThaiKhang_5951071043
             DeleteBrowsingHistory bd = new DeleteBrowsingHistory();
             if (bd.ShowDialog() == DialogResult.OK)
             {
-                if (bd.History.Checked == true)
-                {
-                    File.Delete(historyXml);
-                    historyTreeView.Nodes.Clear();
-                }
+                //if (bd.History.Checked == true)
+                //{
+                //    File.Delete(historyXml);
+                //    historyTreeView.Nodes.Clear();
+                //}
                 if (bd.TempFiles.Checked == true)
                 {
                     urls.Clear();
