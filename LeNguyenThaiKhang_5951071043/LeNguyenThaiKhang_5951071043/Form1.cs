@@ -42,6 +42,7 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void TKBrowser_Load(object sender, EventArgs e)
         {
+           
             getCurrentBrowser().Navigate("https://www.google.com/webhp");
             this.toolStripStatusLabel1.Text = "Done";
             comboBox1.SelectedItem = comboBox1.Items[0];
@@ -379,9 +380,9 @@ namespace LeNguyenThaiKhang_5951071043
                 {
                     root.RemoveChild(x);
                     break;
-                }
+               }
             }
-            historyTreeView.SelectedNode.Remove();
+           historyTreeView.SelectedNode.Remove();
             myXml.Save(historyXml);
         }
 
@@ -640,7 +641,7 @@ namespace LeNguyenThaiKhang_5951071043
         {
             if (e.KeyCode == Keys.Enter)
                 if (googleSearch.Checked == true)
-                    getCurrentBrowser().Navigate("http://google.com/search?q=" + searchTextBox.Text);
+                    getCurrentBrowser().Navigate("https://www.google.com/search?q=" + searchTextBox.Text);
                 else
                     getCurrentBrowser().Navigate("http://search.live.com/results.aspx?q=" + searchTextBox.Text);
         }
@@ -816,7 +817,7 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            getCurrentBrowser().ShowPrintDialog();
+            getCurrentBrowser().ShowSaveAsDialog();
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
@@ -871,18 +872,9 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            if (toolStripComboBox1.Text == "")
-            {
+            
                 getCurrentBrowser().Navigate(adrBarTextBox.Text);
 
-            }
-            else
-            {
-                fakeip();
-            }
-
-            
-           
         }
         private void newWindowCtrlNToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1170,14 +1162,15 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void deleteBrowserHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             DeleteBrowsingHistory bd = new DeleteBrowsingHistory();
             if (bd.ShowDialog() == DialogResult.OK)
             {
-                //if (bd.History.Checked == true)
-                //{
-                //    File.Delete(historyXml);
-                //    historyTreeView.Nodes.Clear();
-                //}
+                if (bd.History.Checked == true)
+                {
+                    File.Delete(historyXml);
+                   historyTreeView.Nodes.Clear();
+                }
                 if (bd.TempFiles.Checked == true)
                 {
                     urls.Clear();
@@ -1236,7 +1229,8 @@ namespace LeNguyenThaiKhang_5951071043
             while (codeHtml.IndexOf("');</script>") != -1)
             {
 
-                string ip = codeHtml.Substring(codeHtml.IndexOf("<script>document.write('") + 24, codeHtml.IndexOf("');</script>") - codeHtml.IndexOf("<script>document.write('") - 24);
+                string ip = codeHtml.Substring(codeHtml.IndexOf("<script>document.write('") 
+                    + 24, codeHtml.IndexOf("');</script>") - codeHtml.IndexOf("<script>document.write('") - 24);
                 mangIP[dem] = ip;
 
                 string port = codeHtml.Substring(codeHtml.IndexOf("');</script>") + 121, 5).Trim();
@@ -1397,7 +1391,7 @@ namespace LeNguyenThaiKhang_5951071043
 
         private void img_Click(object sender, EventArgs e)
         {
-            getCurrentBrowser().Navigate("https://www.bing.com/");
+            getCurrentBrowser().Navigate("https://www.google.com/webhp");
         }
 
         private void sourceToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -1434,12 +1428,15 @@ namespace LeNguyenThaiKhang_5951071043
             getCurrentBrowser().Navigate("https://www.facebook.com/");
         }
 
+       
+        
+
         private void fakeip()
         {
             try
             {
                 fakeipp();
-                MessageBox.Show("đã thay Proxy thanh cong");
+                MessageBox.Show("ĐÃ THAY THẾ PROXY THÀNH CÔNG");
                 toolStripButton12.Visible = true;
 
             }
@@ -1451,7 +1448,7 @@ namespace LeNguyenThaiKhang_5951071043
         private void toolStripButton12_Click(object sender, EventArgs e)
         {
             reg_key.SetValue("ProxyEnable", 0);
-            MessageBox.Show("đã hủy.");
+            MessageBox.Show("ĐÃ HỦY !");
             toolStripComboBox1.Text = "";
         }
         private void fakeipp()
@@ -1463,11 +1460,11 @@ namespace LeNguyenThaiKhang_5951071043
             {
 
                 reg_key = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings", true);
-                string proxy = toolStripComboBox1.Text;  // ip:port
+                string proxy = toolStripComboBox1.Text;  
                 reg_key.SetValue("ProxyEnable", 1);
                 reg_key.SetValue("ProxyServer", proxy);
 
-                getCurrentBrowser().Navigate("https://www.bing.com/");
+                getCurrentBrowser().Navigate("https://www.google.com/webhp");
 
             }
             catch
